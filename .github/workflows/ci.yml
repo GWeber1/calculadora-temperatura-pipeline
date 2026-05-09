@@ -20,6 +20,9 @@ jobs:
     
       - name: Instalar dependências
         run: npm install
-    
+      
+      - name: Verificar qualidade do código
+        run: npx eslint.
+        
       - name: Rodar testes
         run: npm test # Removido os dois pontos inúteis
