@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositório
+        uses: actions/checkout@v4 # Essencial para baixar seu código
+
+      - name: Instalar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Indentação corrigida aqui
+    
+      - name: Instalar dependências
+        run: npm install
+    
+      - name: Rodar testes
+        run: npm test # Removido os dois pontos inúteis
