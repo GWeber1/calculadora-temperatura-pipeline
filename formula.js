@@ -1,3 +1,5 @@
+let a = 5
+
 function formula(graus) {
     return (graus * 9/5) + 32;
 }
