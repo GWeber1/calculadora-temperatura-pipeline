@@ -26,3 +26,6 @@ jobs:
         
       - name: Rodar testes
         run: npm test # Removido os dois pontos inúteis
+      
+      - name: Cobertura de testes
+        run: npm test -- --coverage
